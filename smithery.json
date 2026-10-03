@@ -1,0 +1,50 @@
+{
+  "$schema": "https://smithery.ai/schema/config.json",
+  "name": "agent-resilience-networking-mcp",
+  "displayName": "WHAM // Agent Resilience & Networking MCP",
+  "description": "Sliding-window event stream deduplication, streaming JSONLines validation, resilient HTTP backoff probes, and TLS fingerprinting.",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@whambammy/agent-resilience-networking-mcp"
+  ],
+  "environment": {
+    "PAYMENT_WALLET": {
+      "type": "string",
+      "description": "Base L2 EVM payout wallet address to receive USDC micropayments",
+      "required": false,
+      "default": "0x9793E7269b3301893318dEa8338576Ba612F39B3"
+    },
+    "BASE_RPC_URL": {
+      "type": "string",
+      "description": "Base L2 RPC endpoint",
+      "required": false,
+      "default": "https://mainnet.base.org"
+    }
+  },
+  "capabilities": {
+    "tools": true
+  },
+  "tools": [
+    {
+      "name": "temporal_event_stream_deduplicator",
+      "description": "Sliding-window Bloom filter and event deduplicator for high-throughput streaming agent logs, eliminating duplicate messages with zero disk I/O. (0.030 USDC on Base L2)"
+    },
+    {
+      "name": "resilient_http_probe",
+      "description": "Robust HTTP/S request engine with exponential backoff, jittered retries, smart timeout isolation, and header anti-bot rotation. (0.01 USDC on Base L2)"
+    },
+    {
+      "name": "streaming_jsonlines_validator",
+      "description": "Streams gigabyte-scale JSON Lines (JSONL) datasets, auto-repairing truncated strings, unescaped newlines, trailing commas, and encoding glitches. (0.025 USDC on Base L2)"
+    },
+    {
+      "name": "stealth_tls_fingerprint_mimic",
+      "description": "Synthesizes JA3 and JA4 TLS Client Hello fingerprint configurations matching genuine Google Chrome and Apple Safari builds, preventing bot blocking. (0.045 USDC on Base L2)"
+    },
+    {
+      "name": "resilient_cookie_jar_session_sync",
+      "description": "RFC-6265 compliant cookie jar engine managing cross-domain session tokens, SameSite policies, expiration schedules, and proxy synchronization. (0.030 USDC on Base L2)"
+    }
+  ]
+}

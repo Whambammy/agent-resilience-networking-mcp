@@ -1,0 +1,62 @@
+{
+  "name": "@whambammy/agent-resilience-networking-mcp",
+  "version": "1.0.0",
+  "description": "Sliding-window event stream deduplication, streaming JSONLines validation, resilient HTTP backoff probes, and TLS fingerprinting.",
+  "main": "dist/index.js",
+  "bin": {
+    "agent-resilience-networking-mcp": "./bin/cli.js"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "bin",
+    "registry.json",
+    "smithery.yaml",
+    "smithery.json",
+    "SKILL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node ./bin/cli.js",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "base-l2",
+    "x402",
+    "smithery",
+    "claude-desktop",
+    "cursor",
+    "windsurf",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "agent-skills",
+    "networking",
+    "resilience",
+    "scraping",
+    "streaming",
+    "bloom-filter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Whambammy/agent-resilience-networking-mcp.git"
+  },
+  "homepage": "https://github.com/Whambammy/agent-resilience-networking-mcp#readme",
+  "author": "Whambammy",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

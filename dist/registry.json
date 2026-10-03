@@ -1,0 +1,52 @@
+{
+  "temporal_event_stream_deduplicator": {
+    "name": "temporal_event_stream_deduplicator",
+    "description": "Sliding-window Bloom filter and event deduplicator for high-throughput streaming agent logs, eliminating duplicate messages with zero disk I/O.",
+    "price_usdc": "0.030",
+    "domain": "High-Throughput Streaming",
+    "category": "Data / LLM",
+    "path": "ecosystem/tools/temporal_event_stream_deduplicator",
+    "deployedAt": "2026-09-16 07:25:07",
+    "status": "active"
+  },
+  "resilient_http_probe": {
+    "name": "resilient_http_probe",
+    "description": "Robust HTTP/S request engine with exponential backoff, jittered retries, smart timeout isolation, and header anti-bot rotation.",
+    "price_usdc": "0.01",
+    "domain": "Fault-Tolerant Networking",
+    "category": "Networking",
+    "path": "ecosystem/tools/resilient_http_probe",
+    "deployedAt": "2026-09-16 07:12:18",
+    "status": "active"
+  },
+  "streaming_jsonlines_validator": {
+    "name": "streaming_jsonlines_validator",
+    "description": "Streams gigabyte-scale JSON Lines (JSONL) datasets, auto-repairing truncated strings, unescaped newlines, trailing commas, and encoding glitches.",
+    "price_usdc": "0.025",
+    "domain": "Dataset Hygiene",
+    "category": "Data / LLM",
+    "path": "ecosystem/tools/streaming_jsonlines_validator",
+    "deployedAt": "2026-09-16 07:25:07",
+    "status": "active"
+  },
+  "stealth_tls_fingerprint_mimic": {
+    "name": "stealth_tls_fingerprint_mimic",
+    "description": "Synthesizes JA3 and JA4 TLS Client Hello fingerprint configurations matching genuine Google Chrome and Apple Safari builds, preventing bot blocking.",
+    "price_usdc": "0.045",
+    "domain": "Anti-Fingerprinting & Scraping",
+    "category": "Networking",
+    "path": "ecosystem/tools/stealth_tls_fingerprint_mimic",
+    "deployedAt": "2026-09-16 07:25:07",
+    "status": "active"
+  },
+  "resilient_cookie_jar_session_sync": {
+    "name": "resilient_cookie_jar_session_sync",
+    "description": "RFC-6265 compliant cookie jar engine managing cross-domain session tokens, SameSite policies, expiration schedules, and proxy synchronization.",
+    "price_usdc": "0.030",
+    "domain": "Session Management",
+    "category": "Networking",
+    "path": "ecosystem/tools/resilient_cookie_jar_session_sync",
+    "deployedAt": "2026-09-16 07:25:07",
+    "status": "active"
+  }
+}
